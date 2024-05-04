@@ -426,7 +426,7 @@ router.get("/responsables", async (req, res) => {
 // admin et responsable peut consulter liste des parents qui non pas d'accée
 router.get("/parents/new-parents", async (req, res) => {
   try {
-    const newParent = await Parent.find({ access: false });
+    const newParent = await Parent.find({ access: false }).populate('enfants');
     if (!newParent) {
       return res.status(404).json("No responsable found !");
     }
@@ -440,7 +440,7 @@ router.get("/parents/new-parents", async (req, res) => {
 
 router.get("/parents/sub-parents", async (req, res) => {
   try {
-    const newParent = await Parent.find({ access: true });
+    const newParent = await Parent.find({ access: true }).populate('enfants');
     if (!newParent) {
       return res.status(404).json("No responsable found !");
     }

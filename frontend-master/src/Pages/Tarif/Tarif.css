@@ -1,0 +1,131 @@
+/*.tarif {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+   /* background-color: linear-gradient(to bottom, #ffffff, #f0f8ff);
+   background-image: url('../../assets/tarifs.jpg');
+
+}*/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tarif {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url('../../assets/tarifs.jpg');
+    background-size: cover; /* Ajuster la taille pour couvrir */
+    background-position: center; /* Centrer l'image */
+    width: 100%;
+    height: 100vh; /* Utiliser 100vh pour couvrir toute la hauteur de la fenêtre */
+}
+
+
+.tarif .tarif-title {
+    color: #333;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.tarif .subscription-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tarif .option {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarif .option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tarif .price {
+    font-size: 24px;
+    color: #2e8b57;
+    margin: 10px 0;
+}
+
+.tarif .benefit {
+    font-size: 16px;
+    color: #4169e1;
+    margin-bottom: 20px;
+}
+
+.tarif button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tarif button:hover {
+    background-color: #45a049;
+}
+
+.tarif .payment-form {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fffafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tarif input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tarif input[type="text"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.tarif .option.selected {
+    border-color: #4caf50;
+    /* Highlight the border of the selected plan */
+    background-color: #e8f5e9;
+    /* Light green background for the selected plan */
+}
+
+.tarif .option button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tarif .option button:hover {
+    background-color: #45a049;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

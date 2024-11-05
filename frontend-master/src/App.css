@@ -1,0 +1,13 @@
+body {
+  background-image: url('assets/background_auth.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+

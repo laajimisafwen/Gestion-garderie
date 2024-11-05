@@ -1,0 +1,151 @@
+.form-container-admin-login {
+    padding: 2rem;
+    border-radius: 8px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.form-container-admin-login form {
+    max-width: 600px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-container-admin-login h1 {
+    display: block;
+    color: #333;
+    width: 100%;
+    font-size: 60pt;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: slideInDown 1s ease-out;
+}
+
+.form-container-admin-login h3 {
+    font-size: 30pt;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(158, 42, 0);
+}
+
+.form-container-admin-login input[type="text"],
+.form-container-admin-login input[type="email"],
+.form-container-admin-login input[type="password"] {
+    width: 100%;
+    height: 50px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #213E60;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    transition: border 0.3s ease;
+}
+
+.form-container-admin-login input[type="text"]:focus,
+.form-container-admin-login input[type="email"]:focus,
+.form-container-admin-login input[type="password"]:focus {
+    border-color: #213E60;
+    border-width: 2px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: pulse 1s;
+}
+
+.form-container-admin-login button {
+    display: block;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #008CDA;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-container-admin-login button a {
+    text-decoration: none;
+    color: #008CDA;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.form-container-admin-login button:hover {
+    background-color: #55d653;
+    animation: pulse 1s;
+}
+
+.form-container-admin-login p {
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.form-container-admin-login .signin a:hover {
+    color: #FC0003;
+}
+
+.form-container-admin-login .signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container-admin-login .signin button {
+    background-color: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,171 @@
+.enfants-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(to bottom, #f4f7f6, #e6eeff); */
+    background-image: url('../../../assets/banner2.jpg');
+    min-height: 100vh;
+    animation: fadeInBackground 1s ease-out;
+}
+
+.enfants-container .enfants-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.enfants-container .enfant-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.enfants-container .enfant-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enfants-container .enfant-info p {
+    margin: 16px;
+    color: #333;
+    text-align: start;
+    transition: color 0.3s ease;
+}
+
+.enfants-container .enfant-info p:hover {
+    color: #0056b3;
+}
+
+.enfants-container .enfant-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background: linear-gradient(to right, #f9f9f9, #e1e1e1);
+    border-top: 1px solid #ccc;
+    transition: background 0.3s ease;
+}
+
+.enfants-container .enfant-actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.enfants-container .enfant-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enfants-container .enfant-actions button:nth-child(2) {
+    background-color: #dc3545;
+}
+.enfants-container .enfant-actions button:nth-child(3) {
+    background-color: green;
+}
+
+.enfants-container .enfant-actions button:nth-child(2):hover {
+    background-color: #c82333;
+}
+
+.enfants-container .enfant-edit-form,
+.enfants-container .enfant-add-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    animation: slideInFromLeft 0.5s ease-out both;
+}
+
+.enfants-container .enfant-edit-form input[type="text"],
+.enfants-container .enfant-add-form input[type="text"],
+.enfants-container .enfant-edit-form input[type="date"],
+.enfants-container .enfant-add-form input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.enfants-container .enfant-edit-form input[type="checkbox"],
+.enfants-container .enfant-add-form input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.enfants-container .enfant-edit-form input[type="checkbox"]:hover,
+.enfants-container .enfant-add-form input[type="checkbox"]:hover {
+    transform: scale(1.3);
+}
+
+.enfants-container .enfant-edit-form button,
+.enfants-container .enfant-add-form button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.enfants-container .enfant-edit-form button:hover,
+.enfants-container .enfant-add-form button:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,130 @@
+.container.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* background: linear-gradient(to top left, #fdfbfb, #ebedee); */
+    background-image: url('../../assets/contacter.jpg');
+    background-size: cover; /* Ajuster la taille pour couvrir */
+    background-position: center; /* Centrer l'image */
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.text-zone {
+    max-width: 600px;
+    text-align: center;
+}
+
+.text-zone h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+    animation: slideInDown 0.5s ease-out both;
+}
+
+.text-zone p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.contact-form form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: popIn 0.5s ease-out both;
+}
+
+.contact-form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-form li {
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.contact-form .flat-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .flat-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

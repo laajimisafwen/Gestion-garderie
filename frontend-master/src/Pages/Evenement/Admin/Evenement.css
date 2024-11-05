@@ -1,0 +1,114 @@
+/*.evenement  {
+    background-image: url('../../../assets/banner2.jpg');
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    margin: 0;
+}*/
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('../../../assets/party.jpg');
+    background-size:cover; 
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;}/*
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}*/
+
+.event-add-form {
+   /* background-color: #fff;*/
+   background-image: url('../../../assets/party.jpg');
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0px auto;
+    width: 80%;
+    max-width: 500px;
+    animation: fadeInUp 0.5s ease-out;
+    border: 1px solid #d1d1d1;
+}
+
+.event-add-form input[type="text"],
+.event-add-form input[type="datetime-local"],
+.event-add-form input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease;
+}
+
+.event-add-form input[type="text"]:focus,
+.event-add-form input[type="datetime-local"]:focus,
+.event-add-form input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.event-add-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.event-add-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.event-add-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.event-list .delete-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.event-list .delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.event-list .delete-button:hover {
+    background-color: #c82333;
+}
+
+.event-list {
+    padding-bottom: 100px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

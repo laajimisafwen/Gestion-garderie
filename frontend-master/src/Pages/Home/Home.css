@@ -1,0 +1,171 @@
+/* Base settings */
+.home {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Slider styling */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: fill;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20%;
+    left: 70%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 24px;
+    animation: textFadeIn 2s ease-in-out infinite alternate;
+}
+
+/* General sections styling */
+.introduction,
+.mission,
+.features,
+.programs,
+.testimonials,
+.contact {
+    padding: 40px 20px;
+    margin-top: 1px;
+    background-color: #f0f0f0;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Vibrant colors and animated underlines for headers */
+h2 {
+    position: relative;
+    color: #5a3e92;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: #a044ff;
+    animation: expandUnderline 1s forwards;
+}
+
+/* Features list with colorful backgrounds */
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    background: linear-gradient(135deg, #6a3093, #a044ff);
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+/* Program cards with hover animations */
+.programs {
+    background-color: #fff;
+    text-align: center;
+}
+
+.program-details article {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #e6e6fa;
+    /* light lavender background */
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.program-details article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Testimonials and contact styling */
+.testimonials p,
+.contact p {
+    font-size: 16px;
+    color: #556b2f;
+    /* dark olive green for a soft, earthy feel */
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0.8;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+@keyframes expandUnderline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}

@@ -1,0 +1,53 @@
+/* payment.css */
+
+/* Style général du composant */
+.payment {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Style pour la barre de navigation */
+.payment .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Style pour la liste des événements */
+.payment .event-list {
+    margin-top: 20px;
+}
+
+/* Style pour les éléments de la liste des événements */
+.payment .event-list .event-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Style pour les titres des événements */
+.payment .event-list .event-item h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Style pour les dates et heures des événements */
+.payment .event-list .event-item p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Style pour le bouton d'inscription */
+.payment .event-list .event-item .register-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style pour le bouton d'inscription au survol */
+.payment .event-list .event-item .register-button:hover {
+    background-color: #0056b3;
+}
